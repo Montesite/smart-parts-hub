@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" />
-    
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>SMART PARTS NH LTDA</title>
     <meta name="description" content="Distribuidora de peças autorizadas para celulares e tablets no Rio Grande do Sul. Qualidade superior, atendimento especializado e entrega rápida." />
     <meta name="author" content="SMART PARTS NH LTDA" />
@@ -13,11 +14,11 @@
     <meta property="og:title" content="SMART PARTS NH LTDA" />
     <meta property="og:description" content="Distribuidora de peças autorizadas para celulares e tablets no Rio Grande do Sul. Qualidade superior, atendimento especializado e entrega rápida." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image" content="images/og-image.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@smartparts_nh" />
-    <meta name="twitter:image" content="/og-image.png" />
+    <meta name="twitter:image" content="images/og-image.png" />
     <!-- Facebook Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -47,9 +48,414 @@
   <body>
     <!-- Facebook Pixel noscript fallback -->
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2691989357826566&ev=PageView&noscript=1"/></noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    
+
+    <header class="site-header" id="siteHeader">
+      <nav class="container nav-inner">
+        <div class="nav-row">
+          <div class="nav-logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="SMART PARTS NH Logo" />
+            </a>
+          </div>
+
+          <div class="nav-desktop">
+            <button class="nav-link" data-scroll="inicio">Início</button>
+            <button class="nav-link" data-scroll="sobre">Sobre</button>
+            <button class="nav-link" data-scroll="servicos">Serviços</button>
+            <a class="nav-link" href="vitrine.html">Produtos</a>
+            <button class="nav-link nav-cta" data-scroll="contato">Contato</button>
+          </div>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <svg id="iconMenu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            <svg id="iconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+
+        <div class="nav-mobile" id="navMobile">
+          <button class="nav-link" data-scroll="inicio">Início</button>
+          <button class="nav-link" data-scroll="sobre">Sobre</button>
+          <button class="nav-link" data-scroll="servicos">Serviços</button>
+          <a class="nav-link" href="vitrine.html">Produtos</a>
+          <button class="nav-link nav-cta" data-scroll="contato">Contato</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="inicio" class="hero" style="background-image: url('images/hero-background.jpg');">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-text">
+              <h1 class="hero-title text-gradient-primary text-glow-primary">SMART PARTS NH LTDA</h1>
+              <h2 class="hero-subtitle">A distribuidora de peças que une qualidade e garantia em cada produto!</h2>
+              <p>
+                Peças autorizadas para celulares e tablets com qualidade superior,
+                atendimento especializado e entrega rápida no Rio Grande do Sul.
+              </p>
+              <div class="hero-actions">
+                <a href="https://wa.me/5551999921833" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="heroWhatsapp">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                  Fale conosco
+                </a>
+                <a href="https://www.instagram.com/smartparts_nh" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  Siga no Instagram
+                </a>
+              </div>
+            </div>
+            <div class="hero-logo">
+              <img src="images/logo.png" alt="Logo SMART PARTS NH" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Sobre nós</h2>
+            <p>Conheça nossa visão, missão e valores que nos tornam referência em peças para celulares no Rio Grande do Sul.</p>
+          </div>
+
+          <div class="section-image">
+            <img src="images/about-warehouse.jpg" alt="Estoque organizado de peças para celulares da SMART PARTS NH" />
+          </div>
+
+          <div class="grid grid-3 section-grid">
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon">
+                  <span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+                </div>
+                <h3>Visão</h3>
+                <p>Ser a distribuidora referência em peças de celulares no Rio Grande do Sul, reconhecida pela qualidade superior dos produtos, pela confiança no atendimento e pela excelência na experiência do cliente.</p>
+              </div>
+            </div>
+
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon">
+                  <span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+                </div>
+                <h3>Missão</h3>
+                <p>Oferecer peças autorizadas e de alta qualidade para celulares e tablets, garantindo segurança e desempenho aos nossos clientes. Buscamos proporcionar um atendimento ágil, especializado e humano, aliado a opções de entrega rápidas e eficientes.</p>
+              </div>
+            </div>
+
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon">
+                  <span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg></span>
+                </div>
+                <h3>Compromisso</h3>
+                <p>Trabalhamos com dedicação para garantir que cada peça entregue atenda aos mais altos padrões de qualidade, oferecendo segurança e confiabilidade para nossos clientes em todo o Rio Grande do Sul.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="values-box">
+            <h3>Nossos valores</h3>
+            <div class="values-grid">
+              <div class="value-item">
+                <div class="emoji">🔧</div>
+                <div>
+                  <h4>Qualidade</h4>
+                  <p>Trabalhamos somente com peças autorizadas e de alto padrão, oferecendo segurança e garantia.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="emoji">🤝</div>
+                <div>
+                  <h4>Confiança</h4>
+                  <p>Honramos nossos compromissos e construímos relações transparentes com clientes e parceiros.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="emoji">💬</div>
+                <div>
+                  <h4>Atendimento de excelência</h4>
+                  <p>Priorizamos um suporte cordial, rápido e resolutivo.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="emoji">⚙️</div>
+                <div>
+                  <h4>Responsabilidade</h4>
+                  <p>Garantimos seriedade em cada etapa do processo, desde a escolha das peças até a entrega final.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="emoji">🚀</div>
+                <div>
+                  <h4>Agilidade</h4>
+                  <p>Entregamos com rapidez e eficiência por meio de motoboy, correio e transportadora.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="emoji">📈</div>
+                <div>
+                  <h4>Evolução contínua</h4>
+                  <p>Buscamos melhorias constantes para acompanhar as necessidades do mercado e dos nossos clientes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Produtos (carrossel) -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Nossos produtos</h2>
+            <p>Confira nossa linha completa de peças autorizadas para celulares e tablets</p>
+          </div>
+
+          <div class="carousel" id="productCarousel">
+            <div class="carousel-viewport">
+              <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-1.jpeg" data-alt="Temos tele grátis - Faça seu pedido"><div class="card-media"><img src="images/carousel-1.jpeg" alt="Temos tele grátis - Faça seu pedido" loading="lazy" /></div></div></div>
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-2.jpeg" data-alt="Conectores de alta qualidade - Smart Parts"><div class="card-media"><img src="images/carousel-2.jpeg" alt="Conectores de alta qualidade - Smart Parts" loading="lazy" /></div></div></div>
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-3.jpeg" data-alt="Entregamos para todo Brasil"><div class="card-media"><img src="images/carousel-3.jpeg" alt="Entregamos para todo Brasil" loading="lazy" /></div></div></div>
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-4.jpeg" data-alt="Peças de celular modelo W2031A134G"><div class="card-media"><img src="images/carousel-4.jpeg" alt="Peças de celular modelo W2031A134G" loading="lazy" /></div></div></div>
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-5.jpeg" data-alt="Telas WEFIX com 95% de proximidade das originais"><div class="card-media"><img src="images/carousel-5.jpeg" alt="Telas WEFIX com 95% de proximidade das originais" loading="lazy" /></div></div></div>
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-6.jpeg" data-alt="Peças de celular modelo W2020A04S"><div class="card-media"><img src="images/carousel-6.jpeg" alt="Peças de celular modelo W2020A04S" loading="lazy" /></div></div></div>
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-7.jpeg" data-alt="Display WEFIX modelo W6067NT105G"><div class="card-media"><img src="images/carousel-7.jpeg" alt="Display WEFIX modelo W6067NT105G" loading="lazy" /></div></div></div>
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-8.jpeg" data-alt="Comparação WEFIX original - melhor brilho e nitidez"><div class="card-media"><img src="images/carousel-8.jpeg" alt="Comparação WEFIX original - melhor brilho e nitidez" loading="lazy" /></div></div></div>
+                <div class="carousel-slide"><div class="card" data-lightbox data-src="images/carousel-9.jpeg" data-alt="Melhores telas em Novo Hamburgo, RS"><div class="card-media"><img src="images/carousel-9.jpeg" alt="Melhores telas em Novo Hamburgo, RS" loading="lazy" /></div></div></div>
+              </div>
+            </div>
+            <button class="carousel-nav carousel-prev" id="carouselPrev" aria-label="Slide anterior">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            </button>
+            <button class="carousel-nav carousel-next" id="carouselNext" aria-label="Próximo slide">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços -->
+      <section id="servicos" class="section section-muted">
+        <div class="container">
+          <div class="section-head">
+            <h2>Nossos diferenciais</h2>
+            <p>Oferecemos um serviço completo com peças de qualidade superior e atendimento que você pode confiar.</p>
+          </div>
+
+          <div class="grid grid-3 section-grid">
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></span></div>
+                <h3>Peças autorizadas</h3>
+                <p>Trabalhamos exclusivamente com peças originais e autorizadas, garantindo qualidade e segurança.</p>
+              </div>
+            </div>
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span></div>
+                <h3>Garantia assegurada</h3>
+                <p>Todas as peças possuem garantia, proporcionando tranquilidade e confiança na sua compra.</p>
+              </div>
+            </div>
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73Z"/><path d="M12 22V12"/><path d="m3.3 7 8.7 5 8.7-5"/></svg></span></div>
+                <h3>Amplo estoque</h3>
+                <p>Variedade completa de peças para diversos modelos de celulares e tablets sempre disponíveis.</p>
+              </div>
+            </div>
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a9 9 0 1 1 18 0v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg></span></div>
+                <h3>Atendimento especializado</h3>
+                <p>Equipe preparada para atender suas necessidades com agilidade e profissionalismo.</p>
+              </div>
+            </div>
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></span></div>
+                <h3>Entrega rápida</h3>
+                <p>Opções de entrega por motoboy, correios e transportadora para atender todo o Rio Grande do Sul.</p>
+              </div>
+            </div>
+            <div class="card card-hover-shadow">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span></div>
+                <h3>Agilidade no atendimento</h3>
+                <p>Respostas rápidas e processos eficientes para você não perder tempo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-image">
+            <img src="images/services-delivery.jpg" alt="Serviço de entrega rápida de peças para celulares" />
+          </div>
+
+          <div class="cta-box cta-primary">
+            <h3>Peças de qualidade para seu negócio</h3>
+            <p>Atendemos assistências técnicas, lojas e profissionais do ramo com as melhores condições e suporte especializado.</p>
+            <a href="https://wa.me/5551999921833" target="_blank" rel="noopener noreferrer" class="btn btn-light">Solicite um orçamento</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Entre em contato</h2>
+            <p>Estamos prontos para atender você. Entre em contato através de um de nossos canais.</p>
+          </div>
+
+          <div class="section-image">
+            <img src="images/contact-store.jpg" alt="Loja SMART PARTS NH - Ambiente profissional de atendimento" />
+          </div>
+
+          <div class="grid grid-4 section-grid">
+            <div class="card contact-card">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg></span></div>
+                <h3>Telefone</h3>
+                <a href="https://wa.me/5551999921833" target="_blank" rel="noopener noreferrer">(51) 99992-1833</a>
+              </div>
+            </div>
+            <div class="card contact-card">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span></div>
+                <h3>E-mail</h3>
+                <a href="mailto:SMARTPARTSNH@GMAIL.COM" style="word-break: break-all;">SMARTPARTSNH@GMAIL.COM</a>
+              </div>
+            </div>
+            <div class="card contact-card">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span></div>
+                <h3>Endereço</h3>
+                <p>Av Pedro Adams Filho, 5573 Sala 507<br />Rio Grande do Sul</p>
+              </div>
+            </div>
+            <div class="card contact-card">
+              <div class="card-body">
+                <div class="card-icon"><span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span></div>
+                <h3>Horário</h3>
+                <p style="font-size: .875rem;">Segunda a Sexta: 8:30 - 17:30<br />Sábado: 8:30 - 12:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-box cta-gradient">
+            <h3>Pronto para fazer seu pedido?</h3>
+            <p>Entre em contato agora mesmo e receba atendimento especializado. Estamos aqui para ajudar você a encontrar as melhores peças para seu negócio.</p>
+            <div class="btn-row">
+              <a href="https://wa.me/5551999921833" target="_blank" rel="noopener noreferrer" class="btn btn-light">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                WhatsApp
+              </a>
+              <a href="https://www.instagram.com/smartparts_nh" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img src="images/logo.png" alt="SMART PARTS NH Logo" />
+              <span>SMART PARTS NH</span>
+            </div>
+            <p>A distribuidora de peças que une qualidade e garantia em cada produto!</p>
+            <p class="cnpj">CNPJ: 62.715.111/0001-31</p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Links rápidos</h3>
+            <nav class="footer-nav">
+              <button data-scroll="inicio">Início</button>
+              <button data-scroll="sobre">Sobre nós</button>
+              <button data-scroll="servicos">Serviços</button>
+              <button data-scroll="contato">Contato</button>
+            </nav>
+          </div>
+
+          <div class="footer-col">
+            <h3>Contato</h3>
+            <div class="footer-contact">
+              <a href="https://wa.me/5551999921833" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                (51) 99992-1833
+              </a>
+              <a href="mailto:SMARTPARTSNH@GMAIL.COM" style="word-break: break-all;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                SMARTPARTSNH@GMAIL.COM
+              </a>
+              <div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Av Pedro Adams Filho, 5573 Sala 507<br />Rio Grande do Sul</span>
+              </div>
+              <a href="https://www.instagram.com/smartparts_nh" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                @smartparts_nh
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Horário de funcionamento</h3>
+            <div class="footer-hours">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div><p>Segunda a Sexta</p><p>8:30 - 17:30</p></div>
+              </div>
+              <div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div><p>Sábado</p><p>8:30 - 12:00</p></div>
+              </div>
+              <div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div><p>Domingo</p><p>Fechado</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> SMART PARTS NH LTDA. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/5551999921833"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-btn"
+      aria-label="Contato via WhatsApp"
+      id="floatingWhatsapp"
+    >
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-overlay" id="lightboxOverlay"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
     <!-- Rodapé MonteSite - Atualização Automática -->
     <div id="montesite-footer-badge"></div>
     <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
